@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .row{
+                color: red;
+            }
+            .hola{
+                color: green;
+                font-size: 26px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="nombre">Hola </p>
+        <script>
+            /* Variables, Constantes y Tipos de Datos */
+            let nombre = "Aldo";
+            let edad = 25;
+            let estatura = 1.76;
+            let contacto = {
+                nombre: null,
+                edad: null
+            }
+            let hobbies = ['asda','asd'];
+            let mayorDeEdad = true;
+            const PI = 3.1416;
+
+            /* Imprimir en consola y pantalla */
+            console.log("Es mayor de edad: ",mayorDeEdad);
+            document.write(hobbies);
+            window.alert("Hola");
+
+            /* Obtener elemento y agregar texto */
+            let parrafoNombre = document.getElementById("nombre");
+            parrafoNombre.innerText += nombre;
+
+            /* Cambiar Clases CSS */
+            parrafoNombre.classList.add('row');
+            parrafoNombre.classList.remove('row');
+            parrafoNombre.classList.replace('row','hola');
+
+            /* Solicitar Datos */
+            let nombre2 = window.prompt("Ingresa tu nombre: ");
+            console.log(nombre2);
+            parrafoNombre.innerText = nombre2;
+            let decision = window.confirm("Estas seguro de hacer esto?");
+            console.log(decision);
+        </script>
+    </body>
+</html>

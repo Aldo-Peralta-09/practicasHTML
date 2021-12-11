@@ -1,0 +1,14 @@
+table, td{
+    border-color: #003456;
+    border-width: 5px;
+    border-style: none;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px;
+}
+
+th{
+    background-color: #000;
+    color: white;
+    font-weight: 900;
+}
